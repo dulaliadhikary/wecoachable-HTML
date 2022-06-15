@@ -1,0 +1,219 @@
+// comon scss start
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1313px;
+    margin: 0 auto;
+  
+}
+
+ol,
+li {
+    list-style: none;
+    a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+}
+
+h1 {
+    color: #012665;
+    &:hover {
+        color: #FF5400;
+    }
+}
+
+// common  scss end
+.main-header {
+    height: 316px;
+    line-height: 120px;
+    background-color: #013183;
+    background-image: url(../assets/images/header-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    img {
+        max-width: 270px;
+        height: 56px;
+    }
+}
+
+.main-menu {
+    ul {
+        display: flex;
+        column-gap: 60px;
+        justify-content: center;
+    }
+}
+
+.main-header-btn {
+    color: #FFFFFF;
+    width: 221px;
+    height: 50px;
+    line-height: 35px;
+    background-color: #FF5400;
+    &:hover {
+        outline: none;
+        border: none;
+        background-color: #FF5400;
+        color: #FFFFFF;
+    }
+}
+
+.tob-menu {
+    padding: 0;
+    ul {
+        display: flex;
+        column-gap: 26px;
+        justify-content: space-around;
+        padding: 80px 0 42px;
+        li {
+            a {
+                padding: 16px 40px;
+                line-height: 22px;
+                color: #013183;
+                &:hover {
+                    background-color: #013183;
+                    color: #FFFFFF;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+.cards {
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    &:hover {
+        background-color: #FFFFFF;
+        border-radius: 5px;
+    }
+}
+.populer-course {
+    padding: 64px 0;
+    .populer-course-content {
+        background-color: #FF5400;
+        display: flex;
+        h2 {
+            padding-bottom: 40px;
+            justify-content: center;
+        }
+    }
+}
+
+.learning-area-container {
+    background-color: #693FD7;
+    background-image: url(../assets/images/learning-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    learning-content{
+        padding: 184px 0 174px;
+        h1{
+             padding-bottom: 82px;
+         }
+         p{
+             padding-bottom: 87px;
+       }
+    }  
+
+}
+.think-out-area-container[type="submit"]{
+    border: none;
+    outline: none;
+    width: 200px;
+    line-height: 50px;
+    background-color: #ff2600;
+    border-radius: 5px;
+    color: rgb(11, 0, 54);
+    margin-top: 20px;
+    cursor: pointer;
+    display: inline;
+    // text-align: center;
+    &:hover{
+        background-color: #17008c;
+  }
+}
+
+// button[type="submit"]{
+//     border: none;
+//     outline: none;
+//     width: 200px;
+//     line-height: 50px;
+//     background-color: #e6c8c3;
+//     border-radius: 5px;
+//     color: #fff;
+//     margin-top: 20px;
+//     cursor: pointer;
+//     display: inline;
+//     // text-align: center;
+//     &:hover{
+//         background-color: #17008c;
+//     }
+// }
+
+
+// footer section start
+.footer-area{
+    padding: 70px 0;
+    background-color: #484f5b;
+    color: #fff;
+    .container{
+        max-width: 1120px;
+    }
+    .footer-widget{
+        p {
+            padding-bottom: 45px;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        h4{
+            margin-bottom: 30px;
+        }
+        
+        &.footer-links{
+            ul{
+                li{
+                    list-style: none;
+                    a{
+                        color: #fff;
+                        display: block;
+                        text-decoration: none;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+        &.about-social{     
+            .footer-logo {
+                padding-bottom: 45px;
+            }    
+            ul{
+                margin-top: 15px;
+                display: flex;
+                column-gap: 15px;
+                li{
+                    list-style: none;
+                    background-color: #fff;
+                    line-height: 30px;
+                    width: 30px;
+                    text-align: center;
+                    a{
+                        display: block;
+                        color: #484f5b;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+// footer section end
