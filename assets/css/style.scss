@@ -1,31 +1,55 @@
-// comon scss start
-*{
+// common start 
+* {
     margin: 0;
     padding: 0;
 }
-.container{
+
+.container {
     max-width: 1313px;
     margin: 0 auto;
-  
 }
 
 ol,
-li {
-    list-style: none;
-    a {
-        text-decoration: none;
-        color: #FFFFFF;
+ul {
+    padding-left: 0;
+    li {
+        list-style: none;
+        a {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
     }
 }
 
 h1 {
     color: #012665;
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 130%;
+    padding-bottom: 12px;
     &:hover {
         color: #FF5400;
     }
 }
 
-// common  scss end
+h2 {
+    font-size: 40px;
+    color: #012665;
+}
+
+p {
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.content {
+    padding: 40px 30px;
+}
+
+// common end
+// header start 
 .main-header {
     height: 316px;
     line-height: 120px;
@@ -50,7 +74,9 @@ h1 {
         justify-content: center;
     }
 }
-
+.request-btn{
+    text-align: end;
+}
 .main-header-btn {
     color: #FFFFFF;
     width: 221px;
@@ -58,34 +84,80 @@ h1 {
     line-height: 35px;
     background-color: #FF5400;
     &:hover {
-        outline: none;
-        border: none;
-        background-color: #FF5400;
+        border: #FF5400;
         color: #FFFFFF;
     }
 }
 
-.tob-menu {
-    padding: 0;
-    ul {
-        display: flex;
-        column-gap: 26px;
-        justify-content: space-around;
-        padding: 80px 0 42px;
-        li {
-            a {
-                padding: 16px 40px;
-                line-height: 22px;
-                color: #013183;
-                &:hover {
-                    background-color: #013183;
-                    color: #FFFFFF;
-                    border-radius: 5px;
-                }
-            }
-        }
+// search start
+.left-search{
+    display: flex;
+    select{
+        height: 86px;
+        color: #012665;
+        padding: 30px 35px;
+        margin-top: 17px;
+        border-radius: 10px 0 0 10px;
+    }
+    input{
+        width: 100%;
+        height: 86px;
+        padding-left: 47px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 25px;
+        background: #244c8d;
+        border: none;
+        border-radius: 0 10px 10px 0;
+    }
+    .search-input{
+        flex-basis: 100%;
     }
 }
+    .right-search{
+        text-align: end;
+        select{
+            height: 85px;
+            width: 304px;
+            color: #ffffff;
+            padding: 21px 45px;
+            background-color: transparent;
+            border-radius: 10px;
+        }
+    }
+ 
+// header end
+
+// .tob-menu {
+//     padding: 0;
+//     ul {
+//         display: flex;
+//         column-gap: 26px;
+//         justify-content: flex-start;
+//         padding: 80px 0 42px;
+//         li {
+//             a {
+//                 padding: 16px 40px;
+//                 line-height: 22px;
+//                 color: #013183;
+//                 background-color: #F7F7F7;
+//                 border-radius: 5px;
+//                 &.active {
+//                     background-color: #013183;
+//                     color: #FFFFFF;
+//                     border-radius: 5px;
+//                 }
+//                 &:hover {
+//                     background-color: #013183;
+//                     color: #FFFFFF;
+//                     border-radius: 5px;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// // tab end
 
 .cards {
     background-color: #F7F7F7;
@@ -94,126 +166,174 @@ h1 {
         background-color: #FFFFFF;
         border-radius: 5px;
     }
-}
-.populer-course {
-    padding: 64px 0;
-    .populer-course-content {
-        background-color: #FF5400;
-        display: flex;
-        h2 {
-            padding-bottom: 40px;
-            justify-content: center;
+    .cards-img {
+        position: relative;
+        .star-icon {
+            background-color: red;
+            position: absolute;
+            left: 16px;
+            top: 16px;
+            background-color: #fff;
+            border-radius: 52px;
+            text-align: center;
+            width: 97px;
+            height: 40px;
+            line-height: 40px;
+            i {
+                color: #FF5400;
+            }
+        }
+        .price {
+            position: absolute;
+            bottom: -45px;
+            right: 32px;
+            width: 90px;
+            font-size: 28px;
+            font-weight: 700;
+            background-color: #FF5400;
+            color: #FFF;
+            height: 90px;
+            text-align: center;
+            line-height: 90px;
+            border-radius: 50%;
         }
     }
 }
 
-.learning-area-container {
+.course {
+    padding-top: 72px;
+}
+
+.populer-content {
+    padding-bottom: 24px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ccd4e0;
+    row-gap: 30px;
+    display: flex;
+    .see-all {
+        padding: 12px 24px;
+        background-color: #f7f7f7;
+        border-radius: 4px;
+        font-size: 20px;
+        color: #013183;
+        font-weight: 700;
+        transition: all 0.3s;
+        text-decoration: none;
+        justify-content: end;
+        &:hover {
+            color: #FF5400;
+        }
+    }
+}
+
+// learning start
+.learning-container {
     background-color: #693FD7;
     background-image: url(../assets/images/learning-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    learning-content{
-        padding: 184px 0 174px;
-        h1{
-             padding-bottom: 82px;
-         }
-         p{
-             padding-bottom: 87px;
-       }
-    }  
-
-}
-.think-out-area-container[type="submit"]{
-    border: none;
-    outline: none;
-    width: 200px;
-    line-height: 50px;
-    background-color: #ff2600;
     border-radius: 5px;
-    color: rgb(11, 0, 54);
-    margin-top: 20px;
-    cursor: pointer;
-    display: inline;
-    // text-align: center;
-    &:hover{
-        background-color: #17008c;
-  }
-}
-
-// button[type="submit"]{
-//     border: none;
-//     outline: none;
-//     width: 200px;
-//     line-height: 50px;
-//     background-color: #e6c8c3;
-//     border-radius: 5px;
-//     color: #fff;
-//     margin-top: 20px;
-//     cursor: pointer;
-//     display: inline;
-//     // text-align: center;
-//     &:hover{
-//         background-color: #17008c;
-//     }
-// }
-
-
-// footer section start
-.footer-area{
-    padding: 70px 0;
-    background-color: #484f5b;
-    color: #fff;
-    .container{
-        max-width: 1120px;
-    }
-    .footer-widget{
+    max-width: 1304px;
+    .learning-content {
+        padding: 70px 60px;
+        h2 {
+            font-size: 56px;
+            font-weight: 700;
+            padding-bottom: 20px;
+            color: #FFF;
+        }
         p {
-            padding-bottom: 45px;
+            color: #FFF;
         }
-        a {
-            color: #fff;
-            text-decoration: none;
-        }
-        h4{
-            margin-bottom: 30px;
-        }
-        
-        &.footer-links{
-            ul{
-                li{
-                    list-style: none;
-                    a{
-                        color: #fff;
-                        display: block;
-                        text-decoration: none;
-                        margin-bottom: 15px;
-                    }
-                }
-            }
-        }
-        &.about-social{     
-            .footer-logo {
-                padding-bottom: 45px;
-            }    
-            ul{
-                margin-top: 15px;
-                display: flex;
-                column-gap: 15px;
-                li{
-                    list-style: none;
-                    background-color: #fff;
-                    line-height: 30px;
-                    width: 30px;
-                    text-align: center;
-                    a{
-                        display: block;
-                        color: #484f5b;
-                    }
-                }
-            }
-        }
-        
+    }
+    .learning-img {
+        max-height: 423px;
     }
 }
-// footer section end
+
+// learning end
+// think out start
+.think-out-container {
+    background-image:url(../images/think-out-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .think-content {
+        padding: 112px 320px;
+        text-align: center;
+        h2 {
+            padding-bottom: 24px;
+            color: #FFF;
+        }
+        p {
+            padding: 0 40px;
+            color: #FFF;
+        }
+    }
+}
+
+// think out end
+// footer start
+.footer-area {
+    background-color: #013183;
+    background-image: url(../assets/images/footer-bg.png);
+    .footer-widget {
+        padding: 80px 45px;
+        color: #FFFFFF;
+        p {
+            line-height: 30px;
+        }
+        .footer-logo {
+            padding-bottom: 27px;
+        }
+        .footer-icon {
+            margin-top: 30px;
+            ul {
+                gap: 25px
+            }
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+                border-radius: 50%;
+                background-color: #244c8d;
+                transition: all 0.2s;
+                &:hover {
+                    background-color: #fff;
+                    color: #FF5400;
+                }
+            }
+        }
+        .footer-title {
+            padding: 23px 0;
+        }
+        .footer-links {
+            line-height: 40px;
+        }
+    }
+    .footer-contact{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 18px;
+        line-height: 40px;
+        font-weight: 300;
+   
+    }
+}
+
+// copyright
+.footer-copyright {
+    background-color: #012665;
+    padding: 23px 0;
+    p {
+        color: #fff;
+        padding-top: 10px;
+    }
+}
+
+// footer start
