@@ -265,6 +265,8 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 12px;
+  margin-top: 72px;
 }
 
 .think-out .think-content {
@@ -272,6 +274,7 @@ p {
   text-align: center;
   position: relative;
   overflow: hidden;
+  border-radius: 12px;
 }
 
 .think-out .think-content::before {

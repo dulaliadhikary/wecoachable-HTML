@@ -272,12 +272,15 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
+    border-radius: 12px;
+    margin-top: 72px;
     .think-content   {
         padding: 112px 320px;
         text-align: center;
         position: relative;
         overflow: hidden;
-        
+        border-radius: 12px;
         &::before{
             content: '';
                 position: absolute;
